@@ -1,0 +1,174 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital@0;1&display=swap");
+
+body {
+  font-family: "Inter", sans-serif;
+  background-color: #dbe5f1;
+  display: grid;
+  gap: 1rem;
+  padding: 1rem;
+  grid-template-areas:
+    "header header header header"
+    "nav main main main"
+    "nav aside section1 section2"
+    "nav footer footer footer";
+  height: 100vh;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  grid-area: header;
+  padding-block: 1rem;
+}
+
+header h1 {
+  color: #0f3663;
+}
+
+header input {
+  padding: 0.5rem 2rem;
+  border: 1px solid #0051b2;
+  border-radius: 8px;
+  height: fit-content;
+  width: 18rem;
+}
+
+nav,
+main,
+aside,
+footer,
+section {
+  border-radius: 0.75rem;
+}
+
+nav,
+main {
+  background-color: #0051b3;
+  color: white;
+}
+
+main,
+aside,
+section,
+footer {
+  padding: 2rem;
+}
+
+nav {
+  grid-area: nav;
+  height: 100%;
+  padding-top: 2rem;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav ul li {
+  padding: 1rem 6rem;
+  display: flex;
+  /* justify-content: center; */
+}
+
+nav ul li.selected {
+  background-color: #113e71;
+}
+
+nav ul li a {
+  color: inherit;
+  text-decoration: none;
+  font-weight: bold;
+  text-align: center;
+}
+
+main {
+  grid-area: main;
+  padding: 2rem;
+  display: flex;
+  justify-content: space-between;
+  gap: 20rem;
+}
+
+main h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+main img {
+  width: 8rem;
+  height: 8rem;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+aside,
+section,
+footer {
+  background-color: white;
+}
+
+h3 {
+  margin-bottom: 2rem;
+}
+
+aside div {
+  padding: 1rem;
+}
+
+#section1 {
+  grid-area: section1;
+}
+
+#section2 {
+  grid-area: section2;
+}
+
+section,
+footer {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  justify-content: space-between;
+}
+
+section div,
+footer div {
+  padding: 1rem;
+  background-color: #f0f7ff;
+}
+
+section div p {
+  color: #0051b2;
+}
+
+#section2 div p {
+  font-weight: bold;
+}
+
+footer {
+  grid-area: footer;
+}
+
+footer div span {
+  font-weight: bold;
+}
+
+footer div a {
+  font-weight: bold;
+  color: #0051b2;
+}
+
+#pengaturan {
+  color: #a6f0fa;
+}
+
+#keluar {
+  color: #ffae81;
+}
